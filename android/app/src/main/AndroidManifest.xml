@@ -1,9 +1,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
     <application
         android:label="hidemera"
+        android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher"
         android:enableOnBackInvokedCallback="true"
-        android:name="com.google.firebase.FirebaseApp"
     >
         <activity
             android:name=".MainActivity"
