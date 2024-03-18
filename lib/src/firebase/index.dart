@@ -3,16 +3,23 @@ import 'package:firebase_core/firebase_core.dart';
 
 import 'firebase_options.dart';
 
-/// 初始化firebase
-initFirebase () async {
-  print('the apiKey is: ${DefaultFirebaseOptions.currentPlatform.apiKey}');
-  // 初始化 firebase
-  await Firebase.initializeApp(
-    options: DefaultFirebaseOptions.currentPlatform,
-  );
-}
+class FirebaseHelper {
+    /// 谷歌统计对象
+  static late FirebaseAnalytics analytics;
+    /// 谷歌统计路由监听器
+  static late FirebaseAnalyticsObserver analyticsObserver;
 
-/// 谷歌统计对象
-FirebaseAnalytics analytics = FirebaseAnalytics.instance;
-/// 谷歌统计路由监听器
-FirebaseAnalyticsObserver analyticsObserver = FirebaseAnalyticsObserver(analytics: analytics);
+  /// 初始化firebase
+  static Future<void> init () async {
+    print('the apiKey is: ${DefaultFirebaseOptions.currentPlatform.apiKey}');
+
+    await Firebase.initializeApp(
+      options: DefaultFirebaseOptions.currentPlatform,
+    );
+    /// 谷歌统计对象
+    analytics = FirebaseAnalytics.instance;
+    /// 谷歌统计路由监听器
+    analyticsObserver = FirebaseAnalyticsObserver(analytics: analytics);
+
+  }
+}

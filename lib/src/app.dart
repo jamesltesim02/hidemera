@@ -82,7 +82,7 @@ class HidemeraApp extends StatelessWidget {
           // },
           onGenerateRoute: generateRoute,
           // 路由监听器
-          navigatorObservers: [analyticsObserver],
+          navigatorObservers: [FirebaseHelper.analyticsObserver],
         );
       },
     );

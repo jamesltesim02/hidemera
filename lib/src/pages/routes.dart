@@ -14,7 +14,7 @@ Map<String, Widget> pages = {
 };
 
 Route generateRoute (RouteSettings routeSettings) {
-  analytics.logScreenView(screenName: routeSettings.name);
+  FirebaseHelper.analytics.logScreenView(screenName: routeSettings.name);
   return MaterialPageRoute<void>(
     settings: routeSettings,
     builder: (BuildContext context) {
