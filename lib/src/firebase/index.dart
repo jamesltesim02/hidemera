@@ -5,6 +5,7 @@ import 'firebase_options.dart';
 
 /// 初始化firebase
 initFirebase () async {
+  print('the apiKey is: ${DefaultFirebaseOptions.currentPlatform.apiKey}');
   // 初始化 firebase
   await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,
