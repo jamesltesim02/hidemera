@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "979720163367",
+    "project_id": "hidemera-com",
+    "storage_bucket": "hidemera-com.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:979720163367:android:01acd6ff8239b40cfe3e02",
+        "android_client_info": {
+          "package_name": "com.hidemera"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAEc5JTCq_cfOP_ec2sGH4dgUe2byHzrJ0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
