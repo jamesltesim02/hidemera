@@ -31,6 +31,10 @@
             android:name="com.google.firebase.app.id"
             android:value="@string/google_app_id"
         />
+        <meta-data
+            android:name="com.google.firebase.config.ApiKey"
+            android:value="@string/firebase_api_key"
+        />
     </application>
     <queries>
         <intent>
